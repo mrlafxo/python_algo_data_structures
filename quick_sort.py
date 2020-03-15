@@ -39,11 +39,6 @@ def partition(datavalues, first, last):
             datavalues[upper] = tmpValue
 
 
-
-
-        # TODO: if the two indexes cross, we have found the split point
-        pass
-
     # when the split point is found, exchange the pivot value
     temp = datavalues[first]
     datavalues[first] = datavalues[upper]
