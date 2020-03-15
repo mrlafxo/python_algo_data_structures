@@ -10,8 +10,8 @@ def quickSort(dataset, first, last):
         pivotIdx = partition(dataset, first, last)
 
         # now sort the two partitions
-        quickSort(dataset, first, pivotIdx-1)
-        quickSort(dataset, pivotIdx+1, last)
+        quickSort(dataset, first, pivotIdx - 1)
+        quickSort(dataset, pivotIdx + 1, last)
 
 
 def partition(datavalues, first, last):
@@ -50,5 +50,5 @@ def partition(datavalues, first, last):
 
 # test the merge sort with data
 print(items)
-quickSort(items, 0, len(items)-1)
+quickSort(items, 0, len(items) - 1)
 print(items)
