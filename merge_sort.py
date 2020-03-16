@@ -5,21 +5,17 @@ items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
 def mergesort(dataset):
 
-    if len(dataset) > 1: #recursion breaking condition
+    if len(dataset) > 1:  #recursion breaking condition
         mid = len(dataset) // 2
         leftarr = dataset[:mid]
         rightarr = dataset[mid:]
 
-        mergesort(leftarr) #recursive calls
+        mergesort(leftarr)  #recursive calls
         mergesort(rightarr) #recursive calls
 
-        i = 0 # index left array
-        j = 0 # index right array
-        k = 0 # index merged array
-
-        print (leftarr)
-        print (rightarr)
-        exit()
+        i = 0  #index left array
+        j = 0  #index right array
+        k = 0  #index merged array
 
         while i < len(leftarr) and j < len(rightarr):
 
