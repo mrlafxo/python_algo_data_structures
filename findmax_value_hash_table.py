@@ -11,10 +11,9 @@ def find_max(items):
     # otherwise get the first item and call the function
     # again to operate on the rest of the list
     op1 = items[0]
-    print(op1)
+    #print(op1)
     op2 = find_max(items[1:])
-    print(op2)
-
+    #print(op2)
 
     if op1 > op2:
         return op1
