@@ -11,5 +11,9 @@ def is_sorted(itemlist):
 
     return True
 
+# a more elegant way of doing it - list comprehension
+# return all(itemlist[i] > itemlist[i+1] for i in range(0, len(itemlist) - 1))
+
+
 print(is_sorted(items1))
 print(is_sorted(items2))
